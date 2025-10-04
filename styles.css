@@ -1,0 +1,135 @@
+/*
+ * A minimal, responsive stylesheet.
+ * Focuses on legibility and clear states, especially for mobile.
+ */
+
+/* 1. Base Styles & Resets */
+:root {
+    --text-color: #333;
+    --bg-color: #f9fafb;
+    --primary-color: #4f46e5; /* A pleasant indigo */
+    --focus-outline: 2px solid var(--primary-color);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* Use a base font size of 100% (usually 16px) */
+    font-size: 100%; 
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 2. Layout & Content Container */
+/* Center the content and set a max-width for comfortable reading line length */
+.container {
+    width: 90%;
+    max-width: 75ch; /* 'ch' unit is based on the width of the "0" character, good for line length */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 0;
+}
+
+/* 3. Typography */
+h1 {
+    font-size: 2.5rem; /* Readable on mobile */
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.125rem; /* Slightly larger for better readability */
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #3730a3; /* Darker indigo on hover */
+}
+
+/* 4. Accessibility: Clear Focus States */
+/* Helps users who navigate with keyboards */
+a:focus,
+button:focus {
+    outline: var(--focus-outline);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* 5. Component Styles */
+
+/* Navigation */
+.main-nav {
+    padding: 1rem 5%; /* Use percentage for padding to be responsive */
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.main-nav .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem; /* Spacing between nav items */
+}
+
+/* Main Content & Image */
+main.text-center {
+    text-align: center;
+}
+
+img.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 2rem auto;
+    display: block;
+    max-width: 400px; /* Sensible max width for the image */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #1f2937; /* Dark gray */
+    color: #f9fafb; /* Light text */
+    font-size: 0.9rem;
+}
+
+/* 6. Responsive Design */
+@media (min-width: 768px) {
+    /* For tablets and larger screens */
+    h1 {
+        font-size: 3.5rem; /* Make the heading bigger on larger screens */
+    }
+
+    .container {
+        padding: 4rem 0;
+    }
+}
