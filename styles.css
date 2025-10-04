@@ -55,7 +55,7 @@ h1 {
 }
 
 p {
-    font-size: 1.125rem; /* Slightly larger for better readability */
+    font-size: 1.25rem; /* Slightly larger for better readability */
     margin-bottom: 1.5rem;
 }
 
@@ -130,7 +130,7 @@ img.profile-image {
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     margin: 2rem auto;
     display: block;
-    max-width: 400px; /* Sensible max width for the image */
+    max-width: 320px; /* Sensible max width for the image */
 }
 
 /* Footer */
@@ -153,5 +153,6 @@ footer {
         padding: 4rem 0;
     }
 }
+
 
 
