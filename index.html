@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T'sairus Beasley - Home</title>
-    <!-- Link to the new stylesheet -->
+    <!-- Link to the custom stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts: Inter (font-family is now set in style.css) -->
+    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -14,14 +14,12 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav aria-label="Primary" class="main-nav">
+    <nav class="main-nav" aria-label="Primary">
         <div class="nav-content">
-            <!-- Left side: Name/Logo (can be styled further with a .logo class if needed) -->
-            <div class="text-xl font-bold">
+            <div class="nav-brand">
                 T'sairus Beasley
             </div>
-            <!-- Right side: Navigation Links -->
-            <ul>
+            <ul class="nav-links">
                 <li><a href="/">Home</a></li>
                 <li><a href="/contact.html">Contact</a></li>
                 <li>
@@ -35,11 +33,9 @@
     </nav>
 
     <!-- Main Content Area -->
-    <main class="container text-center">
+    <main class="main-content text-center">
         <!-- Main Heading -->
-        <h1>
-            T'sairus Beasley
-        </h1>
+        <h1>T'sairus Beasley</h1>
 
         <!-- Profile Image -->
         <img src="man-9793571_1280.webp" alt="Black and white sketch of a person walking away, pulling a suitcase and carrying a shoulder bag." class="profile-image">
@@ -60,7 +56,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             const dateElement = document.getElementById('footer-date');
             const today = new Date();
-            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            const options = { year: 'numeric' };
             // Prepend the copyright text to the formatted date
             dateElement.textContent = `© ${today.toLocaleDateString('en-US', options)} T'sairus Beasley`;
         });
