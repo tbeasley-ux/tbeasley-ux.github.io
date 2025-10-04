@@ -20,7 +20,7 @@
 <body class="bg-gray-50 text-gray-800">
 
     <!-- Navigation Bar -->
-    <nav class="bg-white shadow-sm sticky top-0">
+    <nav aria-label="Primary" class="bg-white shadow-sm sticky top-0">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <!-- Left side: Name/Logo -->
             <div class="text-xl font-bold text-gray-900">
@@ -28,9 +28,14 @@
             </div>
             <!-- Right side: Navigation Links -->
             <ul class="flex space-x-8">
-                <li><a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Home</a></li>
-                <li><a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Contact</a></li>
-                <li><a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Course Link</a></li>
+                <li><a href="/" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Home</a></li>
+                <li><a href="/journal.html" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Journal</a></li>
+                <li>
+                    <a href="https://EXTERNAL-URL" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">
+                        Course Link
+                        <span class="sr-only">(opens in new tab)</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -61,9 +66,10 @@
             const today = new Date();
             const options = { year: 'numeric', month: 'long', day: 'numeric' };
             // Prepend the copyright text to the formatted date
-            dateElement.textContent = `© ${today.toLocaleDateString('en-US', options)}`;
+            dateElement.textContent = `© ${today.toLocaleDateString('en-US', options)} T'sairus Beasley`;
         });
     </script>
 
 </body>
 </html>
+
