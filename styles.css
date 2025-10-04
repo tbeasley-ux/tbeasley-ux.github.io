@@ -130,7 +130,7 @@ img.profile-image {
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     margin: 2rem auto;
     display: block;
-    max-width: 320px; /* Sensible max width for the image */
+    max-width: 240px; /* Reduced max-width for a smaller image */
 }
 
 /* Footer */
@@ -153,6 +153,7 @@ footer {
         padding: 4rem 0;
     }
 }
+
 
 
 
