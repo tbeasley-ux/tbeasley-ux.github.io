@@ -5,10 +5,15 @@
 
 /* 1. Base Styles & Resets */
 :root {
-    --text-color: #333;
-    --bg-color: #f9fafb;
-    --primary-color: #4f46e5; /* A pleasant indigo */
+    --text-color: #2d3748; /* Dark Slate */
+    --bg-color: #f7fafc;   /* Very light gray */
+    --primary-color: #4299e1; /* Soft Blue */
+    --accent-color: #2b6cb0;  /* Darker Blue for hover */
     --focus-outline: 2px solid var(--primary-color);
+    --nav-bg: #ffffff;
+    --footer-bg: #1a202c; /* Almost black */
+    --footer-text: #e2e8f0; /* Light gray for footer text */
+    --border-color: #e2e8f0; /* Light border color */
 }
 
 * {
@@ -63,7 +68,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: #3730a3; /* Darker indigo on hover */
+    color: var(--accent-color);
 }
 
 /* 4. Accessibility: Clear Focus States */
@@ -75,13 +80,27 @@ button:focus {
     border-radius: 2px;
 }
 
+/* Visually hide content while keeping it accessible to screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+
 /* 5. Component Styles */
 
 /* Navigation */
 .main-nav {
     padding: 1rem 5%; /* Use percentage for padding to be responsive */
-    background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    background-color: var(--nav-bg);
+    border-bottom: 1px solid var(--border-color); /* Cleaner than shadow */
 }
 
 .main-nav .nav-content {
@@ -107,7 +126,8 @@ img.profile-image {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 1px solid var(--border-color); /* Adds a subtle frame */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     margin: 2rem auto;
     display: block;
     max-width: 400px; /* Sensible max width for the image */
@@ -117,8 +137,8 @@ img.profile-image {
 footer {
     text-align: center;
     padding: 2rem 1rem;
-    background-color: #1f2937; /* Dark gray */
-    color: #f9fafb; /* Light text */
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
     font-size: 0.9rem;
 }
 
@@ -133,3 +153,5 @@ footer {
         padding: 4rem 0;
     }
 }
+
+
