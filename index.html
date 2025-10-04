@@ -4,34 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T'sairus Beasley - Home</title>
-    <!-- Tailwind CSS for styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Inter -->
+    <!-- Link to the new stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Inter (font-family is now set in style.css) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        /* Use the Inter font family */
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body>
 
     <!-- Navigation Bar -->
-    <nav aria-label="Primary" class="bg-white shadow-sm sticky top-0">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- Left side: Name/Logo -->
-            <div class="text-xl font-bold text-gray-900">
+    <nav aria-label="Primary" class="main-nav">
+        <div class="nav-content">
+            <!-- Left side: Name/Logo (can be styled further with a .logo class if needed) -->
+            <div class="text-xl font-bold">
                 T'sairus Beasley
             </div>
             <!-- Right side: Navigation Links -->
-            <ul class="flex space-x-8">
-                <li><a href="/" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Home</a></li>
-                <li><a href="/contact.html" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Contact</a></li>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/contact.html">Contact</a></li>
                 <li>
-                    <a href="https://feifang.info/demystifying-ai-for-everyone-concepts-and-applications-fall-2025/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">
+                    <a href="https://feifang.info/demystifying-ai-for-everyone-concepts-and-applications-fall-2025/" target="_blank" rel="noopener noreferrer">
                         Course Link
                         <span class="sr-only">(opens in new tab)</span>
                     </a>
@@ -41,25 +35,23 @@
     </nav>
 
     <!-- Main Content Area -->
-    <main class="container mx-auto px-6 py-24 text-center">
-        <div class="max-w-3xl mx-auto">
-            <!-- Main Heading -->
-            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
-                T'sairus Beasley
-            </h1>
+    <main class="container text-center">
+        <!-- Main Heading -->
+        <h1>
+            T'sairus Beasley
+        </h1>
 
-            <!-- Profile Image -->
-            <img src="man-9793571_1280.webp" alt="Black and white sketch of a person walking away, pulling a suitcase and carrying a shoulder bag." class="mx-auto my-8 rounded-lg shadow-lg w-full max-w-sm">
+        <!-- Profile Image -->
+        <img src="man-9793571_1280.webp" alt="Black and white sketch of a person walking away, pulling a suitcase and carrying a shoulder bag." class="profile-image">
 
-            <!-- Short Paragraph -->
-            <p class="text-lg text-gray-700 leading-relaxed">
-                Welcome to my personal website. I am a senior in ECE at Carnegie Mellon University. This course that I am currently taking is my first ever AI course so it has been a ton of fun to learn so many new topcis. In my free time, I engjoy watching anime and playing videogames. I also love to hang out with friends. Feel free to explore and get in touch!
-            </p>
-        </div>
+        <!-- Short Paragraph -->
+        <p>
+            Welcome to my personal website. I am a senior in ECE at Carnegie Mellon University. This course that I am currently taking is my first ever AI course so it has been a ton of fun to learn so many new topcis. In my free time, I engjoy watching anime and playing videogames. I also love to hang out with friends. Feel free to explore and get in touch!
+        </p>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center p-4">
+    <footer>
         <p id="footer-date">&copy; T'sairus Beasley</p>
     </footer>
 
@@ -76,6 +68,4 @@
 
 </body>
 </html>
-
-
 
